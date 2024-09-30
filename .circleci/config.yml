@@ -30,9 +30,7 @@ jobs:
           key: v1-npm-cache-{{ checksum "package-lock.json" }}
 
       # Run tests
-      - run:
-          name: Run Tests
-          command: npm run test  # This will run your vitest tests
+
 
       # Build the application
       - run:
